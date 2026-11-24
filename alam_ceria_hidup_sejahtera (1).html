@@ -1,0 +1,1554 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Alam Ceria Hidup Sejahtera - Pengesahan Pelawat</title>
+    <style>
+        /* Menggunakan fon bulat mesra kanak-kanak daripada sistem operasi */
+        @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@600;700;800&display=swap');
+
+        :root {
+            --bg-sky: #E0F7FA;
+            --bg-cream: #FFFDF7;
+            --mint-light: #E8F8F0;
+            --mint-medium: #A8E6CF;
+            --green-pastel: #56C596;
+            --green-dark: #1B5E20;
+            --green-medium: #2E7D32;
+            --yellow-soft: #FFF59D;
+            --yellow-warm: #FFD54F;
+            --coral-soft: #FF8A80;
+            --text-main: #234E2A;
+            --text-sub: #4A6B50;
+            --shadow-soft: 0 10px 25px rgba(46, 125, 50, 0.12);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        html, body {
+            width: 100%;
+            min-height: 100%;
+            min-height: 100dvh;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            font-family: 'Fredoka', 'Nunito', 'Comic Sans MS', sans-serif;
+            background: linear-gradient(180deg, #E1F5FE 0%, #F1F8E9 55%, #FFFDE7 100%);
+            color: var(--text-main);
+        }
+
+        /* Bekas Utama Full-Width untuk Jotform & Responsive (Telefon, Tablet, Laptop) */
+        .app-frame {
+            position: relative;
+            width: 100%;
+            min-height: 100vh;
+            min-height: 100dvh;
+            max-width: 100%;
+            background: linear-gradient(180deg, #E1F5FE 0%, #F1F8E9 55%, #FFFDE7 100%);
+            overflow-x: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Lapisan Hiasan Latar Belakang (Awan, Daun, Rama-rama) */
+        .bg-decorations {
+            position: absolute;
+            inset: 0;
+            pointer-events: none;
+            z-index: 1;
+            overflow: hidden;
+        }
+
+        .cloud {
+            position: absolute;
+            opacity: 0.85;
+            animation: floatCloud linear infinite;
+        }
+        .cloud-1 { top: 4%; left: -15%; width: 110px; animation-duration: 32s; }
+        .cloud-2 { top: 13%; left: -20%; width: 85px; animation-duration: 42s; animation-delay: -10s; }
+        .cloud-3 { top: 24%; left: -12%; width: 70px; animation-duration: 38s; animation-delay: -20s; }
+
+        @keyframes floatCloud {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(120vw); }
+        }
+
+        /* Bekas Utama Full-Width untuk Jotform & Responsive (Telefon, Tablet, Laptop) */
+        .app-frame {
+            position: relative;
+            width: 100%;
+            max-width: 100%;
+            min-height: 100vh;
+            min-height: 100dvh;
+            background: linear-gradient(180deg, #E1F5FE 0%, #F1F8E9 55%, #FFFDE7 100%);
+            overflow-x: hidden;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Lapisan Hiasan Latar Belakang (Awan, Daun, Rama-rama) */
+        .bg-decorations {
+            position: absolute;
+            inset: 0;
+            pointer-events: none;
+            z-index: 1;
+            overflow: hidden;
+        }
+
+        .cloud {
+            position: absolute;
+            opacity: 0.85;
+            animation: floatCloud linear infinite;
+        }
+        .cloud-1 { top: 4%; left: -15%; width: 110px; animation-duration: 32s; }
+        .cloud-2 { top: 13%; left: -20%; width: 85px; animation-duration: 42s; animation-delay: -10s; }
+        .cloud-3 { top: 24%; left: -12%; width: 70px; animation-duration: 38s; animation-delay: -20s; }
+
+        /* Daun Berterbangan */
+        .floating-leaf {
+            position: absolute;
+            pointer-events: none;
+            animation: leafDrift ease-in-out infinite;
+        }
+
+        @keyframes leafDrift {
+            0% { transform: translate(0, -10px) rotate(0deg); opacity: 0.75; }
+            50% { transform: translate(22px, 18px) rotate(25deg); opacity: 1; }
+            100% { transform: translate(-8px, 42px) rotate(-15deg); opacity: 0.7; }
+        }
+
+        /* Rama-rama Terbang */
+        .butterfly {
+            position: absolute;
+            width: 34px;
+            height: 34px;
+            animation: butterflyFlight 9s ease-in-out infinite;
+        }
+        .butterfly-wings {
+            transform-origin: center;
+            animation: flapWings 0.35s ease-in-out infinite alternate;
+        }
+
+        @keyframes flapWings {
+            0% { transform: scaleX(1); }
+            100% { transform: scaleX(0.45); }
+        }
+
+        @keyframes butterflyFlight {
+            0%, 100% { transform: translate(0, 0) rotate(5deg); }
+            25% { transform: translate(35px, -25px) rotate(15deg); }
+            50% { transform: translate(70px, 5px) rotate(-5deg); }
+            75% { transform: translate(30px, 20px) rotate(10deg); }
+        }
+
+        /* Setiap Skrin Fasa */
+        .screen {
+            position: relative;
+            z-index: 2;
+            width: 100%;
+            max-width: 860px;
+            min-height: 100vh;
+            min-height: 100dvh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 16px 20px 22px;
+            transition: opacity 0.65s ease, transform 0.65s ease;
+        }
+
+        .screen.hidden {
+            display: none;
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        .screen.fade-out {
+            opacity: 0;
+            transform: scale(0.96);
+        }
+
+        .screen.fade-in {
+            animation: screenAppear 0.7s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+        }
+
+        @keyframes screenAppear {
+            0% { opacity: 0; transform: translateY(18px) scale(0.97); }
+            100% { opacity: 1; transform: translateY(0) scale(1); }
+        }
+
+        /* ================= FASA 1: CAPTCHA ================= */
+        .captcha-header {
+            background: rgba(255, 255, 255, 0.94);
+            border-radius: 26px;
+            padding: 14px 20px;
+            box-shadow: var(--shadow-soft);
+            border: 3px solid var(--mint-medium);
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 12px;
+        }
+
+        .guardian-badge {
+            width: 66px;
+            height: 66px;
+            flex-shrink: 0;
+            background: var(--mint-light);
+            border-radius: 50%;
+            border: 3px solid var(--green-pastel);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            animation: gentleBob 3s ease-in-out infinite;
+        }
+
+        .guardian-badge svg {
+            width: 56px;
+            height: 56px;
+        }
+
+        .header-text h1 {
+            font-size: clamp(1.25rem, 3vw, 1.62rem);
+            font-weight: 700;
+            color: var(--green-dark);
+            letter-spacing: 0.3px;
+            margin-bottom: 4px;
+        }
+
+        .header-text p {
+            font-size: clamp(0.88rem, 2.2vw, 1.05rem);
+            line-height: 1.38;
+            color: var(--text-sub);
+            font-weight: 600;
+        }
+
+        /* Bar Status Pemilihan */
+        .status-pill-wrap {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 12px;
+        }
+
+        .status-pill {
+            background: #FFFFFF;
+            border: 2.5px solid var(--green-pastel);
+            color: var(--green-medium);
+            padding: 7px 22px;
+            border-radius: 999px;
+            font-size: clamp(0.9rem, 2.2vw, 1.05rem);
+            font-weight: 700;
+            box-shadow: 0 4px 10px rgba(86, 197, 150, 0.15);
+            transition: all 0.25s ease;
+        }
+
+        .status-pill.complete {
+            background: var(--mint-light);
+            border-color: var(--green-dark);
+            color: var(--green-dark);
+        }
+
+        /* Grid CAPTCHA 2 Kolum x 3 Baris (Responsif penuh untuk Telefon, Tablet & Laptop) */
+        .captcha-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            gap: 14px;
+            flex: 1;
+            min-height: 0;
+            margin-bottom: 14px;
+        }
+
+        @media (min-width: 640px) {
+            .captcha-grid {
+                gap: 18px;
+            }
+        }
+
+        .tile {
+            position: relative;
+            background: #FFFFFF;
+            border-radius: 24px;
+            border: 4px solid #DCEEE3;
+            overflow: hidden;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 128px;
+            box-shadow: 0 8px 18px rgba(35, 78, 42, 0.09);
+            transition: transform 0.22s cubic-bezier(0.34, 1.56, 0.64, 1), border-color 0.2s ease, box-shadow 0.2s ease;
+            user-select: none;
+        }
+
+        @media (min-width: 640px) {
+            .tile {
+                min-height: 165px;
+            }
+        }
+
+        .tile:active {
+            transform: scale(0.95);
+        }
+
+        .tile svg {
+            width: 100%;
+            height: 100%;
+            max-height: 220px;
+            display: block;
+            transition: transform 0.25s ease;
+        }
+
+        .tile.selected {
+            border-color: #2E7D32;
+            box-shadow: 0 0 0 3px rgba(86, 197, 150, 0.45), 0 8px 18px rgba(46, 125, 50, 0.2);
+            animation: tilePop 0.32s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+
+        .tile.selected svg {
+            transform: scale(0.93);
+            border-radius: 14px;
+        }
+
+        @keyframes tilePop {
+            0% { transform: scale(0.94); }
+            55% { transform: scale(1.04); }
+            100% { transform: scale(1); }
+        }
+
+        /* Tanda Tick Penjuru */
+        .tile-check {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            width: 34px;
+            height: 34px;
+            background: #2E7D32;
+            color: #FFFFFF;
+            border-radius: 50%;
+            border: 3px solid #FFFFFF;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.1rem;
+            font-weight: 800;
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+            transform: scale(0) rotate(-30deg);
+            opacity: 0;
+            transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1), opacity 0.2s ease;
+            z-index: 5;
+        }
+
+        .tile.selected .tile-check {
+            transform: scale(1) rotate(0deg);
+            opacity: 1;
+        }
+
+        /* Animasi Shake Lembut untuk Jawapan Salah */
+        .tile.shake-wrong {
+            border-color: #EF5350 !important;
+            animation: gentleShake 0.55s ease-in-out;
+        }
+
+        @keyframes gentleShake {
+            0%, 100% { transform: translateX(0); }
+            20% { transform: translateX(-7px) rotate(-1.5deg); }
+            40% { transform: translateX(7px) rotate(1.5deg); }
+            60% { transform: translateX(-5px) rotate(-1deg); }
+            80% { transform: translateX(5px) rotate(1deg); }
+        }
+
+        /* Mesej Maklum Balas / Peringatan */
+        .feedback-box {
+            min-height: 44px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 12px;
+        }
+
+        .feedback-msg {
+            background: #FFF8E1;
+            border: 2.5px solid #FFD54F;
+            color: #6D4C41;
+            padding: 9px 18px;
+            border-radius: 18px;
+            font-size: clamp(0.88rem, 2.2vw, 1rem);
+            font-weight: 700;
+            text-align: center;
+            line-height: 1.35;
+            box-shadow: 0 4px 10px rgba(255, 193, 7, 0.18);
+            opacity: 0;
+            transform: translateY(6px);
+            transition: opacity 0.25s ease, transform 0.25s ease;
+        }
+
+        .feedback-msg.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .feedback-msg.error {
+            background: #FFEBEE;
+            border-color: #FF8A80;
+            color: #B71C1C;
+        }
+
+        /* Butang Pengesahan Besar */
+        .verify-btn {
+            width: 100%;
+            max-width: 480px;
+            align-self: center;
+            padding: 17px 24px;
+            border: none;
+            border-radius: 24px;
+            background: linear-gradient(180deg, #66BB6A 0%, #43A047 100%);
+            color: #FFFFFF;
+            font-family: inherit;
+            font-size: clamp(1.15rem, 2.8vw, 1.32rem);
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            cursor: pointer;
+            box-shadow: 0 6px 0 #2E7D32, 0 12px 20px rgba(46, 125, 50, 0.28);
+            transition: transform 0.15s ease, box-shadow 0.15s ease, filter 0.2s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .verify-btn:hover {
+            filter: brightness(1.04);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 0 #2E7D32, 0 15px 24px rgba(46, 125, 50, 0.32);
+        }
+
+        .verify-btn:active {
+            transform: translateY(4px);
+            box-shadow: 0 2px 0 #2E7D32, 0 6px 12px rgba(46, 125, 50, 0.22);
+        }
+
+        /* ================= FASA 2: ANIMASI LOADING ================= */
+        .loading-screen {
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 32px 24px;
+        }
+
+        .earth-mascot-wrap {
+            position: relative;
+            width: 210px;
+            height: 210px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 28px;
+        }
+
+        .earth-glow {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(168, 230, 207, 0.85) 0%, rgba(168, 230, 207, 0) 72%);
+            animation: pulseGlow 2s ease-in-out infinite;
+        }
+
+        @keyframes pulseGlow {
+            0%, 100% { transform: scale(1); opacity: 0.8; }
+            50% { transform: scale(1.16); opacity: 1; }
+        }
+
+        .earth-bob {
+            position: relative;
+            z-index: 2;
+            width: 175px;
+            height: 175px;
+            animation: earthBounce 2.2s ease-in-out infinite;
+        }
+
+        @keyframes earthBounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-12px); }
+        }
+
+        /* Daun Kecil Terapung Sekeliling Bumi */
+        .orbit-leaf {
+            position: absolute;
+            width: 26px;
+            height: 26px;
+            z-index: 3;
+            animation: floatLeafAround 3s ease-in-out infinite;
+        }
+        .orbit-leaf-1 { top: 4px; left: 8px; animation-delay: 0s; }
+        .orbit-leaf-2 { top: 14px; right: 4px; animation-delay: 0.7s; }
+        .orbit-leaf-3 { bottom: 12px; left: 10px; animation-delay: 1.4s; }
+        .orbit-leaf-4 { bottom: 6px; right: 12px; animation-delay: 2.1s; }
+
+        @keyframes floatLeafAround {
+            0%, 100% { transform: translateY(0) rotate(0deg); }
+            50% { transform: translateY(-10px) rotate(22deg); }
+        }
+
+        .loading-card {
+            background: rgba(255, 255, 255, 0.92);
+            border: 3px solid var(--mint-medium);
+            border-radius: 30px;
+            padding: 26px 24px;
+            width: 100%;
+            max-width: 520px;
+            box-shadow: var(--shadow-soft);
+        }
+
+        .loading-title {
+            font-size: clamp(1.25rem, 3vw, 1.48rem);
+            font-weight: 700;
+            color: var(--green-dark);
+            margin-bottom: 8px;
+        }
+
+        .loading-subtitle {
+            font-size: clamp(0.95rem, 2.4vw, 1.1rem);
+            font-weight: 600;
+            color: var(--text-sub);
+            margin-bottom: 20px;
+        }
+
+        .loading-title {
+            font-size: clamp(1.22rem, 3vw, 1.48rem);
+            font-weight: 700;
+            color: var(--green-dark);
+            margin-bottom: 8px;
+        }
+
+        .loading-subtitle {
+            font-size: clamp(0.94rem, 2.4vw, 1.1rem);
+            font-weight: 600;
+            color: var(--text-sub);
+            margin-bottom: 18px;
+        }
+
+        /* Animasi Titik Bergerak */
+        .dots::after {
+            content: '';
+            animation: movingDots 1.4s steps(4, end) infinite;
+        }
+
+        @keyframes movingDots {
+            0% { content: ''; }
+            25% { content: '.'; }
+            50% { content: '..'; }
+            75% { content: '...'; }
+            100% { content: ''; }
+        }
+
+        /* Progress Bar Hijau */
+        .progress-track {
+            width: 100%;
+            height: 18px;
+            background: var(--mint-light);
+            border-radius: 999px;
+            border: 2px solid var(--mint-medium);
+            overflow: hidden;
+            padding: 2px;
+        }
+
+        .progress-fill {
+            height: 100%;
+            width: 0%;
+            border-radius: 999px;
+            background: linear-gradient(90deg, #81C784 0%, #43A047 60%, #2E7D32 100%);
+            transition: width 0.1s linear;
+        }
+
+        .progress-percent {
+            margin-top: 8px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            color: var(--green-medium);
+        }
+
+        /* ================= FASA 3: PENGESAHAN BERJAYA & SELAMAT DATANG ================= */
+        .success-screen {
+            padding: 20px 20px 0;
+            justify-content: space-between;
+            align-items: center;
+            text-align: center;
+        }
+
+        /* Bahagian Atas: Tanda Tick + Teks Berperingkat */
+        .success-top {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            z-index: 4;
+            margin-top: 4px;
+        }
+
+        .tick-circle-wrap {
+            position: relative;
+            width: 78px;
+            height: 78px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 10px;
+        }
+
+        .tick-glow-ring {
+            position: absolute;
+            inset: -8px;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(102, 187, 106, 0.55) 0%, rgba(102, 187, 106, 0) 70%);
+            animation: ringExpand 2.2s ease-out infinite;
+        }
+
+        @keyframes ringExpand {
+            0% { transform: scale(0.8); opacity: 0.9; }
+            100% { transform: scale(1.45); opacity: 0; }
+        }
+
+        .tick-badge {
+            position: relative;
+            width: 72px;
+            height: 72px;
+            border-radius: 50%;
+            background: linear-gradient(145deg, #66BB6A, #2E7D32);
+            border: 4px solid #FFFFFF;
+            box-shadow: 0 10px 22px rgba(46, 125, 50, 0.32);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            animation: popInBounce 0.75s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+        }
+
+        @keyframes popInBounce {
+            0% { transform: scale(0); opacity: 0; }
+            60% { transform: scale(1.15); opacity: 1; }
+            100% { transform: scale(1); opacity: 1; }
+        }
+
+        .tick-path {
+            stroke-dasharray: 60;
+            stroke-dashoffset: 60;
+            animation: drawTick 0.6s ease-out 0.35s forwards;
+        }
+
+        @keyframes drawTick {
+            to { stroke-dashoffset: 0; }
+        }
+
+        /* Teks Muncul Berperingkat */
+        .stagger-1 {
+            opacity: 0;
+            animation: staggerUp 0.6s ease-out 0.45s forwards;
+        }
+        .stagger-2 {
+            opacity: 0;
+            animation: staggerUp 0.6s ease-out 0.75s forwards;
+        }
+        .stagger-3 {
+            opacity: 0;
+            animation: staggerUp 0.6s ease-out 1.05s forwards;
+        }
+        .stagger-4 {
+            opacity: 0;
+            animation: staggerUp 0.7s ease-out 1.35s forwards;
+        }
+        .stagger-5 {
+            opacity: 0;
+            animation: staggerUp 0.7s ease-out 1.65s forwards;
+        }
+
+        @keyframes staggerUp {
+            0% { opacity: 0; transform: translateY(14px) scale(0.95); }
+            100% { opacity: 1; transform: translateY(0) scale(1); }
+        }
+
+        .badge-verified {
+            background: #FFFFFF;
+            color: var(--green-medium);
+            border: 2.5px solid var(--green-pastel);
+            font-size: clamp(0.85rem, 2vw, 0.98rem);
+            font-weight: 800;
+            padding: 5px 18px;
+            border-radius: 999px;
+            letter-spacing: 0.8px;
+            margin-bottom: 8px;
+            box-shadow: 0 4px 10px rgba(46, 125, 50, 0.1);
+        }
+
+        .success-main-title {
+            font-size: clamp(1.6rem, 4.2vw, 2.15rem);
+            line-height: 1.15;
+            font-weight: 800;
+            color: var(--green-dark);
+            text-shadow: 0 2px 0 #FFFFFF;
+            margin-bottom: 6px;
+        }
+
+        .success-sub-badge {
+            font-size: clamp(0.92rem, 2.3vw, 1.08rem);
+            font-weight: 700;
+            color: #1B5E20;
+            background: rgba(255, 255, 255, 0.88);
+            padding: 6px 16px;
+            border-radius: 14px;
+        }
+
+        /* Sepanduk Selamat Datang Bergerak Perlahan Kiri ke Kanan */
+        .welcome-banner-container {
+            position: relative;
+            width: 100vw;
+            margin: 10px 0;
+            padding: 12px 0;
+            background: linear-gradient(90deg, rgba(255,255,255,0.65) 0%, rgba(255,253,231,0.96) 50%, rgba(255,255,255,0.65) 100%);
+            border-top: 3px dashed var(--green-pastel);
+            border-bottom: 3px dashed var(--green-pastel);
+            overflow: hidden;
+            z-index: 4;
+        }
+
+        .welcome-marquee-track {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            animation: gentleHorizontalSway 6.5s ease-in-out infinite;
+        }
+
+        @keyframes gentleHorizontalSway {
+            0% { transform: translateX(-18px) translateY(0px); }
+            25% { transform: translateX(0px) translateY(-3px); }
+            50% { transform: translateX(18px) translateY(0px); }
+            75% { transform: translateX(0px) translateY(-3px); }
+            100% { transform: translateX(-18px) translateY(0px); }
+        }
+
+        .welcome-big-text {
+            font-size: clamp(1.3rem, 3.4vw, 1.72rem);
+            line-height: 1.25;
+            font-weight: 800;
+            color: #1B5E20;
+            text-shadow: 0 2px 6px rgba(168, 230, 207, 0.9);
+            padding: 0 16px;
+        }
+
+        .welcome-big-text span {
+            display: block;
+            font-size: clamp(1.12rem, 2.8vw, 1.42rem);
+            color: #2E7D32;
+        }
+
+        .welcome-desc-card {
+            background: rgba(255, 255, 255, 0.94);
+            border: 3px solid var(--mint-medium);
+            border-radius: 22px;
+            padding: 14px 20px;
+            font-size: clamp(0.94rem, 2.4vw, 1.12rem);
+            line-height: 1.42;
+            font-weight: 600;
+            color: var(--text-main);
+            box-shadow: 0 6px 16px rgba(46, 125, 50, 0.1);
+            z-index: 4;
+            max-width: 680px;
+        }
+
+        /* Pentas Ilustrasi Taman Ceria di Bahagian Bawah */
+        .garden-stage {
+            position: relative;
+            width: 100vw;
+            margin: 6px 0 0;
+            height: 265px;
+            flex-shrink: 0;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            z-index: 3;
+        }
+
+        /* Bukit Rumput & Elemen Taman */
+        .garden-ground-svg {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+
+        /* Bunga Bergoyang Ditiup Angin */
+        .sway-flower {
+            transform-origin: bottom center;
+            animation: flowerSway 3.2s ease-in-out infinite;
+        }
+        .sway-flower-delay {
+            transform-origin: bottom center;
+            animation: flowerSway 3.8s ease-in-out infinite reverse;
+        }
+
+        @keyframes flowerSway {
+            0%, 100% { transform: rotate(-5deg); }
+            50% { transform: rotate(6deg); }
+        }
+
+        /* Watak Utama di Pentas Taman */
+        .characters-row {
+            position: relative;
+            z-index: 5;
+            width: 100%;
+            max-width: 640px;
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-around;
+            padding: 0 20px 18px;
+        }
+
+        .stage-earth {
+            width: 140px;
+            height: 140px;
+            animation: earthBounce 2.6s ease-in-out infinite;
+            margin-bottom: 10px;
+        }
+
+        .stage-student {
+            width: 162px;
+            height: 196px;
+            animation: gentleBob 3.4s ease-in-out infinite;
+        }
+
+        /* Animasi Tangan Murid Melambai */
+        .waving-arm {
+            transform-origin: 102px 98px;
+            animation: waveHand 1.4s ease-in-out infinite;
+        }
+
+        @keyframes waveHand {
+            0%, 100% { transform: rotate(0deg); }
+            25% { transform: rotate(-18deg); }
+            50% { transform: rotate(8deg); }
+            75% { transform: rotate(-15deg); }
+        }
+
+        @keyframes gentleBob {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-5px); }
+        }
+
+        /* Penyesuaian Skrin Pendek */
+        @media (max-height: 700px) {
+            .screen { padding: 12px 14px; }
+            .captcha-header { padding: 10px 14px; margin-bottom: 8px; }
+            .guardian-badge { width: 52px; height: 52px; }
+            .guardian-badge svg { width: 44px; height: 44px; }
+            .captcha-grid { gap: 10px; margin-bottom: 10px; }
+            .tile { min-height: 112px; }
+            .verify-btn { padding: 13px 18px; font-size: 1.05rem; }
+            .garden-stage { height: 215px; }
+            .stage-student { width: 130px; height: 158px; }
+            .stage-earth { width: 112px; height: 112px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="app-frame">
+        <!-- HIASAN LATAR BELAKANG (AWAN, RAMA-RAMA & DAUN) -->
+        <div class="bg-decorations" aria-hidden="true">
+            <!-- Awan Kartun 1 -->
+            <svg class="cloud cloud-1" viewBox="0 0 120 60">
+                <path d="M25,48 Q10,48 10,35 Q10,23 23,22 Q28,8 46,10 Q62,4 76,16 Q92,14 98,27 Q110,29 110,39 Q110,48 95,48 Z" fill="#FFFFFF"/>
+            </svg>
+            <!-- Awan Kartun 2 -->
+            <svg class="cloud cloud-2" viewBox="0 0 120 60">
+                <path d="M25,48 Q10,48 10,35 Q10,23 23,22 Q28,8 46,10 Q62,4 76,16 Q92,14 98,27 Q110,29 110,39 Q110,48 95,48 Z" fill="#FFFFFF"/>
+            </svg>
+            <!-- Awan Kartun 3 -->
+            <svg class="cloud cloud-3" viewBox="0 0 120 60">
+                <path d="M25,48 Q10,48 10,35 Q10,23 23,22 Q28,8 46,10 Q62,4 76,16 Q92,14 98,27 Q110,29 110,39 Q110,48 95,48 Z" fill="#FFFFFF"/>
+            </svg>
+
+            <!-- Daun Terapung Lembut -->
+            <svg class="floating-leaf" style="top: 16%; left: 8%; width: 22px; animation-duration: 5s;" viewBox="0 0 30 30">
+                <path d="M5,22 Q6,6 24,5 Q23,23 5,22 Z" fill="#81C784"/>
+                <path d="M5,22 Q14,14 24,5" stroke="#388E3C" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+            </svg>
+            <svg class="floating-leaf" style="top: 32%; right: 7%; width: 20px; animation-duration: 6s; animation-delay: 1.5s;" viewBox="0 0 30 30">
+                <path d="M25,22 Q24,6 6,5 Q7,23 25,22 Z" fill="#AED581"/>
+                <path d="M25,22 Q16,14 6,5" stroke="#558B2F" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+            </svg>
+            <svg class="floating-leaf" style="top: 52%; left: 5%; width: 18px; animation-duration: 5.5s; animation-delay: 2.5s;" viewBox="0 0 30 30">
+                <path d="M5,22 Q6,6 24,5 Q23,23 5,22 Z" fill="#66BB6A"/>
+            </svg>
+
+            <!-- Rama-rama Kuning Comel -->
+            <svg class="butterfly" style="top: 22%; right: 14%;" viewBox="0 0 50 50">
+                <g class="butterfly-wings">
+                    <ellipse cx="16" cy="20" rx="11" ry="8" transform="rotate(-25 16 20)" fill="#FFF176" stroke="#FBC02D" stroke-width="2"/>
+                    <ellipse cx="34" cy="20" rx="11" ry="8" transform="rotate(25 34 20)" fill="#FFF176" stroke="#FBC02D" stroke-width="2"/>
+                    <ellipse cx="18" cy="31" rx="8" ry="6" transform="rotate(20 18 31)" fill="#FFD54F" stroke="#FBC02D" stroke-width="1.5"/>
+                    <ellipse cx="32" cy="31" rx="8" ry="6" transform="rotate(-20 32 31)" fill="#FFD54F" stroke="#FBC02D" stroke-width="1.5"/>
+                </g>
+                <rect x="23.5" y="15" width="3" height="20" rx="1.5" fill="#5D4037"/>
+                <path d="M24,15 Q20,9 18,10 M26,15 Q30,9 32,10" stroke="#5D4037" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+            </svg>
+        </div>
+
+        <!-- ================================================================
+             FASA 1: PENGESAHAN PELAWAT (CAPTCHA ALAM SEKITAR)
+             ================================================================ -->
+        <section id="phaseCaptcha" class="screen fade-in">
+            <!-- Kepala CAPTCHA dengan Avatar Penjaga Alam -->
+            <header class="captcha-header">
+                <div class="guardian-badge" aria-hidden="true">
+                    <!-- Avatar Penjaga Alam Mini -->
+                    <svg viewBox="0 0 80 80" width="52" height="52">
+                        <!-- Tudung Hijau Pastel -->
+                        <path d="M16,44 Q16,14 40,14 Q64,14 64,44 Q66,64 56,72 L24,72 Q14,64 16,44 Z" fill="#66BB6A"/>
+                        <path d="M21,43 Q21,19 40,19 Q59,19 59,43 Q59,58 40,60 Q21,58 21,43 Z" fill="#A5D6A7"/>
+                        <!-- Wajah Comel -->
+                        <circle cx="40" cy="41" r="15" fill="#FFE0B2"/>
+                        <!-- Mata -->
+                        <circle cx="34.5" cy="39" r="2.3" fill="#3E2723"/>
+                        <circle cx="45.5" cy="39" r="2.3" fill="#3E2723"/>
+                        <circle cx="35.2" cy="38.2" r="0.8" fill="#FFFFFF"/>
+                        <circle cx="46.2" cy="38.2" r="0.8" fill="#FFFFFF"/>
+                        <!-- Pipi Merah Jambu -->
+                        <ellipse cx="31" cy="43" rx="2.8" ry="1.6" fill="#FFAB91" opacity="0.7"/>
+                        <ellipse cx="49" cy="43" rx="2.8" ry="1.6" fill="#FFAB91" opacity="0.7"/>
+                        <!-- Senyuman -->
+                        <path d="M36,45 Q40,49.5 44,45" stroke="#5D4037" stroke-width="2" fill="none" stroke-linecap="round"/>
+                        <!-- Hiasan Daun Kecil di Tudung -->
+                        <path d="M51,20 Q60,15 62,24 Q53,27 51,20 Z" fill="#2E7D32"/>
+                    </svg>
+                </div>
+                <div class="header-text">
+                    <h1>PENGESAHAN PELAWAT 🌿</h1>
+                    <p>Pilih 3 gambar yang mempunyai elemen alam sekitar untuk meneruskan ke laman pembelajaran.</p>
+                </div>
+            </header>
+
+            <!-- Status Bilangan Gambar Dipilih -->
+            <div class="status-pill-wrap">
+                <div id="selectionCounter" class="status-pill">0 daripada 3 gambar dipilih</div>
+            </div>
+
+            <!-- Grid Gambar 2x3 (Dijana secara rawak oleh JavaScript) -->
+            <div id="captchaGrid" class="captcha-grid" role="group" aria-label="Pilihan gambar pengesahan alam sekitar"></div>
+
+            <!-- Mesej Peringatan / Maklum Balas -->
+            <div class="feedback-box">
+                <div id="feedbackMsg" class="feedback-msg" role="status" aria-live="polite"></div>
+            </div>
+
+            <!-- Butang Sahkan -->
+            <button id="verifyBtn" class="verify-btn" type="button">
+                <span>SAHKAN PILIHAN</span>
+                <span>✓</span>
+            </button>
+        </section>
+
+        <!-- ================================================================
+             FASA 2: ANIMASI LOADING (3 SAAT)
+             ================================================================ -->
+        <section id="phaseLoading" class="screen loading-screen hidden">
+            <div class="earth-mascot-wrap">
+                <div class="earth-glow"></div>
+
+                <!-- Daun Kecil Terapung Sekeliling Bumi -->
+                <svg class="orbit-leaf orbit-leaf-1" viewBox="0 0 30 30">
+                    <path d="M4,24 Q5,5 25,4 Q24,24 4,24 Z" fill="#66BB6A"/>
+                    <path d="M4,24 Q14,14 25,4" stroke="#2E7D32" stroke-width="2" fill="none" stroke-linecap="round"/>
+                </svg>
+                <svg class="orbit-leaf orbit-leaf-2" viewBox="0 0 30 30">
+                    <path d="M26,24 Q25,5 5,4 Q6,24 26,24 Z" fill="#81C784"/>
+                    <path d="M26,24 Q16,14 5,4" stroke="#2E7D32" stroke-width="2" fill="none" stroke-linecap="round"/>
+                </svg>
+                <svg class="orbit-leaf orbit-leaf-3" viewBox="0 0 30 30">
+                    <path d="M4,24 Q5,5 25,4 Q24,24 4,24 Z" fill="#AED581"/>
+                </svg>
+                <svg class="orbit-leaf orbit-leaf-4" viewBox="0 0 30 30">
+                    <path d="M26,24 Q25,5 5,4 Q6,24 26,24 Z" fill="#4CAF50"/>
+                </svg>
+
+                <!-- Maskot Bumi Comel Tersenyum -->
+                <svg class="earth-bob" viewBox="0 0 160 160">
+                    <defs>
+                        <clipPath id="earthClipLoading">
+                            <circle cx="80" cy="80" r="64"/>
+                        </clipPath>
+                    </defs>
+                    <!-- Lautan Biru Langit -->
+                    <circle cx="80" cy="80" r="64" fill="#4FC3F7"/>
+                    <circle cx="80" cy="80" r="64" fill="none" stroke="#FFFFFF" stroke-width="4"/>
+                    <!-- Benua Hijau Pastel -->
+                    <g clip-path="url(#earthClipLoading)">
+                        <path d="M25,45 Q45,30 62,48 Q75,62 55,78 Q38,88 22,70 Z" fill="#81C784"/>
+                        <path d="M95,30 Q125,25 138,50 Q145,75 118,82 Q98,85 92,62 Q86,42 95,30 Z" fill="#66BB6A"/>
+                        <path d="M55,105 Q80,95 105,112 Q122,128 95,145 Q65,148 52,128 Z" fill="#81C784"/>
+                        <!-- Kilauan Cahaya -->
+                        <ellipse cx="52" cy="36" rx="16" ry="7" transform="rotate(-25 52 36)" fill="#FFFFFF" opacity="0.35"/>
+                    </g>
+                    <!-- Wajah Comel Bumi -->
+                    <circle cx="62" cy="76" r="5.5" fill="#263238"/>
+                    <circle cx="98" cy="76" r="5.5" fill="#263238"/>
+                    <circle cx="64" cy="74" r="2" fill="#FFFFFF"/>
+                    <circle cx="100" cy="74" r="2" fill="#FFFFFF"/>
+                    <!-- Pipi -->
+                    <ellipse cx="52" cy="86" rx="7" ry="4" fill="#FF8A80" opacity="0.65"/>
+                    <ellipse cx="108" cy="86" rx="7" ry="4" fill="#FF8A80" opacity="0.65"/>
+                    <!-- Mulut Tersenyum Lebar -->
+                    <path d="M68,88 Q80,102 92,88 Z" fill="#FF7043" stroke="#3E2723" stroke-width="2.5" stroke-linejoin="round"/>
+                    <!-- Tunas Daun di Atas Kepala Bumi -->
+                    <path d="M80,16 Q80,6 70,4 Q64,12 78,16" fill="#43A047"/>
+                    <path d="M80,16 Q82,5 93,5 Q96,14 82,16" fill="#66BB6A"/>
+                </svg>
+            </div>
+
+            <div class="loading-card">
+                <div class="loading-title">Pengesahan sedang diproses<span class="dots"></span></div>
+                <div class="loading-subtitle">Sedang menyediakan ruang pembelajaran anda<span class="dots"></span></div>
+                <div class="progress-track">
+                    <div id="progressFill" class="progress-fill"></div>
+                </div>
+                <div id="progressPercent" class="progress-percent">0%</div>
+            </div>
+        </section>
+
+        <!-- ================================================================
+             FASA 3: PAPARAN PENGESAHAN BERJAYA & SELAMAT DATANG
+             ================================================================ -->
+        <section id="phaseSuccess" class="screen success-screen hidden">
+            <div class="success-top">
+                <!-- Animasi Tanda Tick Besar dengan Glow -->
+                <div class="tick-circle-wrap">
+                    <div class="tick-glow-ring"></div>
+                    <div class="tick-badge">
+                        <svg width="42" height="42" viewBox="0 0 50 50">
+                            <path class="tick-path" d="M12,26 L21,35 L38,16" fill="none" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Teks Muncul Berperingkat -->
+                <div class="badge-verified stagger-1">✓ PENGESAHAN BERJAYA!</div>
+                <h2 class="success-main-title stagger-2">ANDA BERJAYA<br>MEMBUAT PENGESAHAN!</h2>
+                <div class="success-sub-badge stagger-3">🎉 ANDA BERJAYA MEMASUKI LAMAN INI</div>
+            </div>
+
+            <!-- Tulisan SELAMAT DATANG Bergerak Perlahan Kiri ke Kanan -->
+            <div class="welcome-banner-container stagger-4">
+                <div class="welcome-marquee-track">
+                    <div class="welcome-big-text">
+                        SELAMAT DATANG
+                        <span>KE ALAM CERIA HIDUP SEJAHTERA 🌿</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ayat Sambutan Mesra Murid -->
+            <p class="welcome-desc-card stagger-5">
+                Selamat datang ke <strong>Alam Ceria Hidup Sejahtera</strong>! Bersedia untuk meneroka dan belajar cara menjaga alam sekitar kita?
+            </p>
+
+            <!-- Pentas Taman Ceria dengan Bumi, Murid Bertudung Melambai, Pokok, Tong Kitar Semula & Bunga -->
+            <div class="garden-stage">
+                <!-- Latar Taman Kartun SVG -->
+                <svg class="garden-ground-svg" viewBox="0 0 430 240" preserveAspectRatio="none">
+                    <!-- Bukit Belakang -->
+                    <path d="M0,155 Q110,115 230,145 Q340,170 430,135 L430,240 L0,240 Z" fill="#C5E1A5"/>
+                    <!-- Bukit Rumput Hadapan -->
+                    <path d="M0,175 Q140,145 280,172 Q365,188 430,165 L430,240 L0,240 Z" fill="#81C784"/>
+                    <path d="M0,198 Q215,178 430,198 L430,240 L0,240 Z" fill="#66BB6A"/>
+
+                    <!-- Pokok Comel Kiri -->
+                    <rect x="28" y="105" width="12" height="55" rx="4" fill="#8D6E63"/>
+                    <circle cx="34" cy="95" r="24" fill="#66BB6A"/>
+                    <circle cx="20" cy="105" r="16" fill="#81C784"/>
+                    <circle cx="48" cy="105" r="16" fill="#4CAF50"/>
+
+                    <!-- Tong Kitar Semula Comel di Sebelah Kiri -->
+                    <g transform="translate(14, 152)">
+                        <rect x="4" y="10" width="32" height="38" rx="6" fill="#4FC3F7" stroke="#0288D1" stroke-width="2"/>
+                        <rect x="1" y="5" width="38" height="7" rx="3.5" fill="#29B6F6" stroke="#0288D1" stroke-width="2"/>
+                        <!-- Simbol Kitar Semula Ringkas -->
+                        <circle cx="20" cy="29" r="8" fill="#FFFFFF" opacity="0.9"/>
+                        <path d="M17,27 L20,23 L23,27 M23,31 L20,34 L17,31" stroke="#0288D1" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+                    </g>
+
+                    <!-- Anak Pokok di Sebelah Kanan -->
+                    <g transform="translate(362, 155)">
+                        <rect x="14" y="22" width="4" height="22" rx="2" fill="#6D4C41"/>
+                        <path d="M16,25 Q4,18 6,10 Q16,12 16,25 Z" fill="#66BB6A"/>
+                        <path d="M16,22 Q28,15 26,7 Q16,9 16,22 Z" fill="#81C784"/>
+                        <ellipse cx="16" cy="44" rx="14" ry="4" fill="#5D4037" opacity="0.35"/>
+                    </g>
+
+                    <!-- Bunga Kecil Bergoyang Ditiup Angin (Kiri) -->
+                    <g class="sway-flower" transform="translate(76, 196)">
+                        <line x1="0" y1="0" x2="0" y2="-22" stroke="#2E7D32" stroke-width="2.5" stroke-linecap="round"/>
+                        <circle cx="0" cy="-26" r="4" fill="#FF8A80"/>
+                        <circle cx="-5" cy="-22" r="4" fill="#FF8A80"/>
+                        <circle cx="5" cy="-22" r="4" fill="#FF8A80"/>
+                        <circle cx="-3" cy="-17" r="4" fill="#FF8A80"/>
+                        <circle cx="3" cy="-17" r="4" fill="#FF8A80"/>
+                        <circle cx="0" cy="-21" r="3.5" fill="#FFF176"/>
+                    </g>
+
+                    <!-- Bunga Kecil Bergoyang Ditiup Angin (Kanan) -->
+                    <g class="sway-flower-delay" transform="translate(342, 194)">
+                        <line x1="0" y1="0" x2="0" y2="-24" stroke="#2E7D32" stroke-width="2.5" stroke-linecap="round"/>
+                        <circle cx="0" cy="-28" r="4.2" fill="#FFF176"/>
+                        <circle cx="-5" cy="-24" r="4.2" fill="#FFF176"/>
+                        <circle cx="5" cy="-24" r="4.2" fill="#FFF176"/>
+                        <circle cx="-3" cy="-19" r="4.2" fill="#FFF176"/>
+                        <circle cx="3" cy="-19" r="4.2" fill="#FFF176"/>
+                        <circle cx="0" cy="-23" r="3.5" fill="#FF8A80"/>
+                    </g>
+
+                    <!-- Rumpun Rumput -->
+                    <path d="M120,215 L124,203 L128,215 L132,205 L135,215" fill="none" stroke="#2E7D32" stroke-width="2.5" stroke-linecap="round"/>
+                    <path d="M295,216 L299,204 L303,216 L307,206 L310,216" fill="none" stroke="#2E7D32" stroke-width="2.5" stroke-linecap="round"/>
+                </svg>
+
+                <!-- Watak Utama: Maskot Bumi & Avatar Murid Perempuan Bertudung Hijau Pastel Melambai -->
+                <div class="characters-row">
+                    <!-- Maskot Bumi Comel -->
+                    <svg class="stage-earth" viewBox="0 0 160 160" aria-label="Maskot Bumi Comel">
+                        <defs>
+                            <clipPath id="earthClipStage">
+                                <circle cx="80" cy="82" r="60"/>
+                            </clipPath>
+                        </defs>
+                        <circle cx="80" cy="82" r="60" fill="#4FC3F7" stroke="#FFFFFF" stroke-width="4"/>
+                        <g clip-path="url(#earthClipStage)">
+                            <path d="M25,48 Q45,35 60,52 Q72,65 54,80 Q36,88 22,72 Z" fill="#81C784"/>
+                            <path d="M96,35 Q124,30 135,54 Q142,76 116,84 Q96,86 90,64 Z" fill="#66BB6A"/>
+                            <path d="M56,108 Q80,98 104,114 Q120,128 94,142 Q64,144 52,126 Z" fill="#81C784"/>
+                        </g>
+                        <!-- Mata & Senyuman Bumi -->
+                        <circle cx="63" cy="78" r="5" fill="#263238"/>
+                        <circle cx="97" cy="78" r="5" fill="#263238"/>
+                        <circle cx="65" cy="76" r="1.8" fill="#FFFFFF"/>
+                        <circle cx="99" cy="76" r="1.8" fill="#FFFFFF"/>
+                        <ellipse cx="53" cy="87" rx="6.5" ry="3.8" fill="#FF8A80" opacity="0.7"/>
+                        <ellipse cx="107" cy="87" rx="6.5" ry="3.8" fill="#FF8A80" opacity="0.7"/>
+                        <path d="M68,89 Q80,102 92,89 Z" fill="#FF7043" stroke="#3E2723" stroke-width="2.2" stroke-linejoin="round"/>
+                        <!-- Daun Kecil di Kepala -->
+                        <path d="M80,22 Q80,10 69,9 Q65,18 78,22" fill="#43A047"/>
+                        <path d="M80,22 Q82,10 93,10 Q95,19 82,22" fill="#66BB6A"/>
+                    </svg>
+
+                    <!-- Avatar Murid Perempuan Bertudung Hijau Pastel Melambai -->
+                    <svg class="stage-student" viewBox="0 0 150 185" aria-label="Avatar Murid Bertudung Melambai">
+                        <!-- Lengan Kanan Melambai (Animasi Berterusan) -->
+                        <g class="waving-arm">
+                            <path d="M100,98 Q122,82 128,62" stroke="#81C784" stroke-width="14" stroke-linecap="round" fill="none"/>
+                            <circle cx="129" cy="59" r="8.5" fill="#FFE0B2"/>
+                            <!-- Garis Gerakan Lambaian -->
+                            <path d="M139,50 Q143,56 140,63" stroke="#43A047" stroke-width="2" fill="none" stroke-linecap="round"/>
+                        </g>
+
+                        <!-- Baju Kurung / Pakaian Sekolah Hijau Pastel -->
+                        <path d="M44,96 Q75,90 106,96 L114,162 L36,162 Z" fill="#A5D6A7" stroke="#66BB6A" stroke-width="2.5" stroke-linejoin="round"/>
+                        <!-- Lengan Kiri -->
+                        <path d="M48,100 Q34,120 38,138" stroke="#81C784" stroke-width="13" stroke-linecap="round" fill="none"/>
+                        <circle cx="38" cy="140" r="7.5" fill="#FFE0B2"/>
+
+                        <!-- Kasut Comel -->
+                        <ellipse cx="60" cy="166" rx="11" ry="6" fill="#FFFFFF" stroke="#4CAF50" stroke-width="2"/>
+                        <ellipse cx="90" cy="166" rx="11" ry="6" fill="#FFFFFF" stroke="#4CAF50" stroke-width="2"/>
+
+                        <!-- Tudung Hijau Pastel -->
+                        <path d="M36,64 Q36,18 75,18 Q114,18 114,64 Q118,98 98,112 Q75,120 52,112 Q32,98 36,64 Z" fill="#66BB6A" stroke="#43A047" stroke-width="2.5"/>
+                        <path d="M43,62 Q43,25 75,25 Q107,25 107,62 Q107,88 75,92 Q43,88 43,62 Z" fill="#C8E6C9"/>
+
+                        <!-- Wajah Murid Comel -->
+                        <circle cx="75" cy="60" r="23" fill="#FFE0B2"/>
+                        <!-- Mata Bersinar -->
+                        <circle cx="66" cy="57" r="3.4" fill="#3E2723"/>
+                        <circle cx="84" cy="57" r="3.4" fill="#3E2723"/>
+                        <circle cx="67.2" cy="55.6" r="1.2" fill="#FFFFFF"/>
+                        <circle cx="85.2" cy="55.6" r="1.2" fill="#FFFFFF"/>
+                        <!-- Kening Lembut -->
+                        <path d="M62,51 Q66,49 70,51" stroke="#5D4037" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+                        <path d="M80,51 Q84,49 88,51" stroke="#5D4037" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+                        <!-- Pipi Merah Jambu -->
+                        <ellipse cx="59" cy="64" rx="4.2" ry="2.4" fill="#FF8A80" opacity="0.65"/>
+                        <ellipse cx="91" cy="64" rx="4.2" ry="2.4" fill="#FF8A80" opacity="0.65"/>
+                        <!-- Senyuman Mesra -->
+                        <path d="M68,67 Q75,75 82,67" stroke="#5D4037" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+
+                        <!-- Pin Bunga Kecil pada Tudung -->
+                        <circle cx="97" cy="36" r="5" fill="#FFF176" stroke="#FBC02D" stroke-width="1.5"/>
+                        <circle cx="97" cy="36" r="2" fill="#FF8A80"/>
+                    </svg>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        /**
+         * DATA ILUSTRASI CAPTCHA (6 Gambar Kartun 2D SVG Tanpa Label Teks)
+         * 3 Gambar Betul (isNature: true) & 3 Gambar Salah (isNature: false)
+         */
+        const captchaItems = [
+            {
+                id: 'river',
+                isNature: true,
+                svg: `
+                <svg viewBox="0 0 160 130" aria-label="Ilustrasi 1">
+                    <rect width="160" height="130" fill="#E1F5FE"/>
+                    <!-- Matahari Kecil -->
+                    <circle cx="132" cy="24" r="12" fill="#FFF176"/>
+                    <!-- Bukit Hijau -->
+                    <path d="M0,62 Q45,32 95,58 Q130,40 160,56 L160,130 L0,130 Z" fill="#A5D6A7"/>
+                    <path d="M0,78 Q65,65 160,82 L160,130 L0,130 Z" fill="#81C784"/>
+                    <!-- Sungai Bersih Berliku -->
+                    <path d="M72,62 C55,78 98,92 64,130 L114,130 C138,94 88,78 92,62 Z" fill="#4FC3F7"/>
+                    <path d="M78,65 C65,79 102,92 75,126" stroke="#E1F5FE" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+                    <path d="M90,74 C82,88 112,98 96,124" stroke="#B3E5FC" stroke-width="2" fill="none" stroke-linecap="round"/>
+                    <!-- Batu Sungai & Semak -->
+                    <ellipse cx="48" cy="108" rx="10" ry="6" fill="#90A4AE"/>
+                    <ellipse cx="130" cy="112" rx="9" ry="5" fill="#78909C"/>
+                    <circle cx="24" cy="96" r="10" fill="#66BB6A"/>
+                    <circle cx="34" cy="100" r="8" fill="#4CAF50"/>
+                </svg>`
+            },
+            {
+                id: 'flower',
+                isNature: true,
+                svg: `
+                <svg viewBox="0 0 160 130" aria-label="Ilustrasi 2">
+                    <rect width="160" height="130" fill="#FFFDE7"/>
+                    <!-- Tanah Rumput -->
+                    <path d="M0,104 Q80,92 160,104 L160,130 L0,130 Z" fill="#81C784"/>
+                    <!-- Batang & Daun -->
+                    <path d="M80,108 Q77,80 80,58" stroke="#388E3C" stroke-width="6" fill="none" stroke-linecap="round"/>
+                    <path d="M80,88 Q54,82 56,68 Q72,70 80,88 Z" fill="#66BB6A"/>
+                    <path d="M80,82 Q106,76 104,62 Q88,64 80,82 Z" fill="#4CAF50"/>
+                    <!-- Kelopak Bunga Berkembang -->
+                    <circle cx="80" cy="34" r="14" fill="#FF8A80"/>
+                    <circle cx="100" cy="46" r="14" fill="#FF8A80"/>
+                    <circle cx="93" cy="68" r="14" fill="#FF8A80"/>
+                    <circle cx="67" cy="68" r="14" fill="#FF8A80"/>
+                    <circle cx="60" cy="46" r="14" fill="#FF8A80"/>
+                    <!-- Tengah Bunga Tersenyum -->
+                    <circle cx="80" cy="52" r="15" fill="#FFD54F" stroke="#FFA000" stroke-width="2"/>
+                    <circle cx="75" cy="50" r="2" fill="#4E342E"/>
+                    <circle cx="85" cy="50" r="2" fill="#4E342E"/>
+                    <path d="M76,55 Q80,59 84,55" stroke="#4E342E" stroke-width="2" fill="none" stroke-linecap="round"/>
+                </svg>`
+            },
+            {
+                id: 'forest',
+                isNature: true,
+                svg: `
+                <svg viewBox="0 0 160 130" aria-label="Ilustrasi 3">
+                    <rect width="160" height="130" fill="#E8F5E9"/>
+                    <!-- Lantai Hutan -->
+                    <rect x="0" y="96" width="160" height="34" fill="#81C784"/>
+                    <!-- Pokok Kiri -->
+                    <rect x="30" y="68" width="10" height="32" rx="3" fill="#795548"/>
+                    <polygon points="35,24 14,56 56,56" fill="#66BB6A"/>
+                    <polygon points="35,40 10,74 60,74" fill="#43A047"/>
+                    <!-- Pokok Kanan -->
+                    <rect x="118" y="68" width="10" height="32" rx="3" fill="#795548"/>
+                    <polygon points="123,26 102,58 144,58" fill="#66BB6A"/>
+                    <polygon points="123,42 98,76 148,76" fill="#43A047"/>
+                    <!-- Pokok Tengah Besar -->
+                    <rect x="73" y="62" width="14" height="40" rx="4" fill="#6D4C41"/>
+                    <circle cx="80" cy="44" r="24" fill="#4CAF50"/>
+                    <circle cx="64" cy="54" r="17" fill="#66BB6A"/>
+                    <circle cx="96" cy="54" r="17" fill="#388E3C"/>
+                    <circle cx="80" cy="32" r="16" fill="#81C784"/>
+                </svg>`
+            },
+            {
+                id: 'almari',
+                isNature: false,
+                svg: `
+                <svg viewBox="0 0 160 130" aria-label="Ilustrasi 4">
+                    <rect width="160" height="130" fill="#FFF8E1"/>
+                    <!-- Lantai Bilik -->
+                    <rect x="0" y="106" width="160" height="24" fill="#FFE0B2"/>
+                    <!-- Kaki Almari Baju -->
+                    <rect x="44" y="100" width="9" height="10" rx="2.5" fill="#5D4037"/>
+                    <rect x="107" y="100" width="9" height="10" rx="2.5" fill="#5D4037"/>
+                    <!-- Bahagian Atas Almari -->
+                    <rect x="36" y="14" width="88" height="8" rx="4" fill="#8D6E63" stroke="#5D4037" stroke-width="2"/>
+                    <!-- Badan Utama Almari Baju -->
+                    <rect x="40" y="21" width="80" height="80" rx="6" fill="#BCAAA4" stroke="#5D4037" stroke-width="2.5"/>
+                    <!-- Dua Pintu Berkembar -->
+                    <rect x="45" y="26" width="33" height="53" rx="3" fill="#D7CCC8" stroke="#6D4C41" stroke-width="2"/>
+                    <rect x="82" y="26" width="33" height="53" rx="3" fill="#D7CCC8" stroke="#6D4C41" stroke-width="2"/>
+                    <!-- Pemegang Bulat Pintu -->
+                    <circle cx="73" cy="53" r="3" fill="#FFD54F" stroke="#5D4037" stroke-width="1.5"/>
+                    <circle cx="87" cy="53" r="3" fill="#FFD54F" stroke="#5D4037" stroke-width="1.5"/>
+                    <!-- Laci Bawah Almari -->
+                    <rect x="45" y="83" width="70" height="13" rx="3" fill="#A1887F" stroke="#6D4C41" stroke-width="2"/>
+                    <rect x="73" y="88" width="14" height="3.5" rx="1.8" fill="#FFD54F" stroke="#5D4037" stroke-width="1"/>
+                </svg>`
+            },
+            {
+                id: 'sofa',
+                isNature: false,
+                svg: `
+                <svg viewBox="0 0 160 130" aria-label="Ilustrasi 5">
+                    <rect width="160" height="130" fill="#FFF3E0"/>
+                    <!-- Lantai -->
+                    <rect x="0" y="98" width="160" height="32" fill="#FFE0B2"/>
+                    <!-- Kaki Sofa -->
+                    <rect x="34" y="92" width="8" height="12" rx="2" fill="#6D4C41"/>
+                    <rect x="118" y="92" width="8" height="12" rx="2" fill="#6D4C41"/>
+                    <!-- Sandaran Sofa -->
+                    <rect x="30" y="38" width="100" height="42" rx="14" fill="#FF7043"/>
+                    <!-- Kusyen Duduk -->
+                    <rect x="34" y="68" width="46" height="22" rx="8" fill="#FF8A65" stroke="#E64A19" stroke-width="2"/>
+                    <rect x="80" y="68" width="46" height="22" rx="8" fill="#FF8A65" stroke="#E64A19" stroke-width="2"/>
+                    <!-- Tempat Letak Tangan -->
+                    <rect x="20" y="56" width="18" height="38" rx="9" fill="#F4511E"/>
+                    <rect x="122" y="56" width="18" height="38" rx="9" fill="#F4511E"/>
+                </svg>`
+            },
+            {
+                id: 'clock',
+                isNature: false,
+                svg: `
+                <svg viewBox="0 0 160 130" aria-label="Ilustrasi 6">
+                    <rect width="160" height="130" fill="#E8EAF6"/>
+                    <!-- Kaki Jam Loceng -->
+                    <line x1="56" y1="96" x2="48" y2="108" stroke="#5C6BC0" stroke-width="6" stroke-linecap="round"/>
+                    <line x1="104" y1="96" x2="112" y2="108" stroke="#5C6BC0" stroke-width="6" stroke-linecap="round"/>
+                    <!-- Loceng Atas -->
+                    <circle cx="52" cy="32" r="13" fill="#FFD54F" stroke="#FFA000" stroke-width="2.5"/>
+                    <circle cx="108" cy="32" r="13" fill="#FFD54F" stroke="#FFA000" stroke-width="2.5"/>
+                    <rect x="77" y="18" width="6" height="14" rx="3" fill="#5C6BC0"/>
+                    <!-- Badan Jam -->
+                    <circle cx="80" cy="66" r="38" fill="#5C6BC0"/>
+                    <circle cx="80" cy="66" r="30" fill="#FFFFFF"/>
+                    <!-- Tanda Waktu & Jarum Jam -->
+                    <circle cx="80" cy="43" r="2.5" fill="#3949AB"/>
+                    <circle cx="103" cy="66" r="2.5" fill="#3949AB"/>
+                    <circle cx="80" cy="89" r="2.5" fill="#3949AB"/>
+                    <circle cx="57" cy="66" r="2.5" fill="#3949AB"/>
+                    <line x1="80" y1="66" x2="80" y2="48" stroke="#E53935" stroke-width="3.5" stroke-linecap="round"/>
+                    <line x1="80" y1="66" x2="95" y2="66" stroke="#283593" stroke-width="3.5" stroke-linecap="round"/>
+                    <circle cx="80" cy="66" r="4" fill="#FFA000"/>
+                </svg>`
+            }
+        ];
+
+        // Elemen DOM
+        const captchaGrid = document.getElementById('captchaGrid');
+        const selectionCounter = document.getElementById('selectionCounter');
+        const feedbackMsg = document.getElementById('feedbackMsg');
+        const verifyBtn = document.getElementById('verifyBtn');
+
+        const phaseCaptcha = document.getElementById('phaseCaptcha');
+        const phaseLoading = document.getElementById('phaseLoading');
+        const phaseSuccess = document.getElementById('phaseSuccess');
+
+        const progressFill = document.getElementById('progressFill');
+        const progressPercent = document.getElementById('progressPercent');
+
+        // Set menyimpan ID gambar yang dipilih
+        const selectedIds = new Set();
+        let feedbackTimeout = null;
+
+        /**
+         * Mengocok susunan array secara rawak (Fisher-Yates Shuffle)
+         */
+        function shuffleArray(array) {
+            const arr = [...array];
+            for (let i = arr.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [arr[i], arr[j]] = [arr[j], arr[i]];
+            }
+            return arr;
+        }
+
+        /**
+         * Memaparkan mesej peringatan lembut di bawah grid
+         */
+        function showFeedback(text, isError = false) {
+            clearTimeout(feedbackTimeout);
+            feedbackMsg.textContent = text;
+            feedbackMsg.className = 'feedback-msg visible' + (isError ? ' error' : '');
+
+            feedbackTimeout = setTimeout(() => {
+                feedbackMsg.classList.remove('visible');
+            }, 3400);
+        }
+
+        /**
+         * Mengemas kini teks bilangan gambar yang telah dipilih
+         */
+        function updateCounter() {
+            const count = selectedIds.size;
+            selectionCounter.textContent = `${count} daripada 3 gambar dipilih`;
+            if (count === 3) {
+                selectionCounter.classList.add('complete');
+            } else {
+                selectionCounter.classList.remove('complete');
+            }
+        }
+
+        /**
+         * Membina grid 2x3 dengan susunan rawak
+         */
+        function renderCaptchaGrid() {
+            captchaGrid.innerHTML = '';
+            const shuffled = shuffleArray(captchaItems);
+
+            shuffled.forEach((item) => {
+                const tile = document.createElement('div');
+                tile.className = 'tile';
+                tile.dataset.id = item.id;
+                tile.dataset.nature = item.isNature;
+                tile.setAttribute('role', 'checkbox');
+                tile.setAttribute('aria-checked', 'false');
+                tile.setAttribute('tabindex', '0');
+
+                tile.innerHTML = `
+                    <div class="tile-check">✓</div>
+                    ${item.svg}
+                `;
+
+                const toggleTile = () => {
+                    // Buang kesan shake jika ada
+                    tile.classList.remove('shake-wrong');
+
+                    if (selectedIds.has(item.id)) {
+                        // Nyahpilih gambar
+                        selectedIds.delete(item.id);
+                        tile.classList.remove('selected');
+                        tile.setAttribute('aria-checked', 'false');
+                        feedbackMsg.classList.remove('visible');
+                    } else {
+                        // Semak had maksimum 3 gambar
+                        if (selectedIds.size >= 3) {
+                            showFeedback('Hanya 3 gambar sahaja boleh dipilih ya! 🌿', false);
+                            return;
+                        }
+                        // Pilih gambar
+                        selectedIds.add(item.id);
+                        tile.classList.add('selected');
+                        tile.setAttribute('aria-checked', 'true');
+                        feedbackMsg.classList.remove('visible');
+                    }
+                    updateCounter();
+                };
+
+                tile.addEventListener('click', toggleTile);
+                tile.addEventListener('keydown', (e) => {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        toggleTile();
+                    }
+                });
+
+                captchaGrid.appendChild(tile);
+            });
+        }
+
+        /**
+         * Memulakan Fasa 2: Animasi Loading selama 3 saat
+         */
+        function startLoadingPhase() {
+            phaseCaptcha.classList.add('fade-out');
+
+            setTimeout(() => {
+                phaseCaptcha.classList.add('hidden');
+                phaseLoading.classList.remove('hidden');
+                phaseLoading.classList.add('fade-in');
+
+                const duration = 3000; // 3 saat
+                const startTime = performance.now();
+
+                function updateProgress(currentTime) {
+                    const elapsed = currentTime - startTime;
+                    const progress = Math.min(elapsed / duration, 1);
+                    const percent = Math.round(progress * 100);
+
+                    progressFill.style.width = `${percent}%`;
+                    progressPercent.textContent = `${percent}%`;
+
+                    if (progress < 1) {
+                        requestAnimationFrame(updateProgress);
+                    } else {
+                        // Tamat 3 saat -> beralih ke Fasa 3 (Pengesahan Berjaya)
+                        setTimeout(startSuccessPhase, 250);
+                    }
+                }
+
+                requestAnimationFrame(updateProgress);
+            }, 450);
+        }
+
+        /**
+         * Memulakan Fasa 3: Paparan Pengesahan Berjaya & Selamat Datang
+         */
+        function startSuccessPhase() {
+            phaseLoading.classList.add('fade-out');
+
+            setTimeout(() => {
+                phaseLoading.classList.add('hidden');
+                phaseSuccess.classList.remove('hidden');
+                phaseSuccess.classList.add('fade-in');
+            }, 450);
+        }
+
+        /**
+         * Pengendalian Klik Butang "SAHKAN PILIHAN ✓"
+         */
+        verifyBtn.addEventListener('click', () => {
+            const tiles = document.querySelectorAll('.tile');
+            let wrongSelectedCount = 0;
+            let rightSelectedCount = 0;
+
+            tiles.forEach((tile) => {
+                tile.classList.remove('shake-wrong');
+                const id = tile.dataset.id;
+                const isNature = tile.dataset.nature === 'true';
+
+                if (selectedIds.has(id)) {
+                    if (isNature) {
+                        rightSelectedCount++;
+                    } else {
+                        wrongSelectedCount++;
+                        // Berikan kesan shake lembut pada gambar salah yang dipilih
+                        void tile.offsetWidth; // trigger reflow untuk ulang animasi
+                        tile.classList.add('shake-wrong');
+                    }
+                }
+            });
+
+            // Jika tepat 3 gambar alam sekitar dipilih dan tiada gambar salah
+            if (rightSelectedCount === 3 && wrongSelectedCount === 0) {
+                verifyBtn.disabled = true;
+                startLoadingPhase();
+            } else {
+                // Paparkan mesej lembut untuk mencuba semula
+                showFeedback('Oops! Cuba lagi ya 🌱 Pilih gambar yang mempunyai elemen alam sekitar.', true);
+            }
+        });
+
+        // Mulakan grid apabila halaman dimuatkan
+        window.addEventListener('DOMContentLoaded', () => {
+            renderCaptchaGrid();
+            updateCounter();
+        });
+    </script>
+</body>
+</html>
